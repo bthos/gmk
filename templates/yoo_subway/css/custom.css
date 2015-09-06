@@ -1,0 +1,136 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/*
+ * Custom Style Sheet - Use this file to style your content
+ */
+
+ .mod-box.mod-box-color1 .wk-twitter-single:before {
+ 	display: block;
+ 	margin-bottom: 20px;
+ 	padding-top: 140px;
+ 	text-align: center;
+ 	font-size: 36px;
+ 	line-height: 36px;
+ 	background: url(../../../images/yootheme/icon_twitter.png) 50% 0 no-repeat;
+ 	content: "latest tweet";
+ }
+
+  .mod-box.mod-box-color1 .wk-twitter-single .content {
+  	font-family: Arial, Helvetica, sans-serif;
+  	font-style: normal;
+  	font-size: 18px;
+  	line-height: 27px;
+  	min-height: 194px;
+  }
+
+.mod-box.mod-box-color1 .wk-twitter-single .content:before,
+.mod-box.mod-box-color1 .wk-twitter-single .content:after { content: '"'; }
+
+
+.clear {clear: both;}
+
+/*
+* Events list
+*/
+
+#courses-list {
+  float: right;
+  display: block;
+  list-style-type: none;
+  /*margin: 0 0 0 20px;*/
+  padding: 0;
+  /*min-height: 400px;*/
+}
+
+#courses-list {list-style-type: none;}
+
+#courses-list li {
+  /*width: 645px;*/
+  background: #F6F6F6;
+  /*margin: 0 0 50px 0;*/
+  padding: 0;
+  position: relative;
+}
+
+#courses-list h2 {
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  background: #2B2B2B;
+  padding: 10px 16px 10px 16px;
+  margin: 0;
+  line-height: 100%;
+  text-align: left;
+}
+
+#courses-list li img {
+  float: left;
+  width: 500px;
+  height: 263px;
+}
+
+#courses-list .event-date {
+  float: left;
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  border-bottom: 2px dashed #1F1A10;
+  font-size: 52px;
+  color: #86a049;
+  text-transform: uppercase;
+  padding: 30px 0 0;
+  text-align: center;
+  width: 212px;
+  height: 52px;
+  margin: 0 4px 12px 4px;
+}
+
+#courses-list .event-instructor {
+  height: 43px;
+  float: left;
+  font-size: 12px;
+  position: relative;
+  padding: 12px 0 0 100px;
+}
+
+#courses-list .event-instructor img {
+  float: none;
+  position: absolute;
+  z-index: 1;
+  left: 27px;
+  top: 0px;
+  width: 50px;
+  height: 50px;
+}
+
+.event-thumb-mask {
+  background: url(/images/event-thumb-mask.png) 0 0 no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+  left: 27px;
+  z-index: 2;
+}
+
+#courses-list .event-more-button {
+  font-family: 'Myriad Pro';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 17px 0 15px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background: #86a049;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#courses-list a {color: #1A887D;}
+#courses-list-wrapper a {text-decoration: none;}

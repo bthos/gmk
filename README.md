@@ -1,1 +1,0 @@
-# gamak.co
