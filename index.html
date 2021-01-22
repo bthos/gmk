@@ -1,617 +1,447 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<html lang="en-gb" dir="ltr">
 
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head>
-  <meta charset="utf-8">
-  <title>Unison | Material Design Portfolio Template</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <base  />
+  <meta name="generator" content="Joomla! - Open Source Content Management" />
+  <title>community</title>
+  <link href="http://gamak.co/templates/yoo_subway/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+  <link rel="stylesheet" href="http://gamak.co/cache/widgetkit/widgetkit-ad436d6f.css" type="text/css" />
+  <script src="http://gamak.co/media/system/js/mootools-core.js" type="text/javascript"></script>
+  <script src="http://gamak.co/media/system/js/core.js" type="text/javascript"></script>
+  <script src="http://gamak.co/media/system/js/caption.js" type="text/javascript"></script>
+  <script src="http://gamak.co/media/system/js/mootools-more.js" type="text/javascript"></script>
+  <script src="http://gamak.co/media/widgetkit/js/jquery.js" type="text/javascript"></script>
+  <script src="http://gamak.co/cache/widgetkit/widgetkit-667639fb.js" type="text/javascript"></script>
+  <script type="text/javascript">
+window.addEvent('load', function() {
+				new JCaption('img.caption');
+			});
+window.addEvent('domready', function() {
+			$$('.hasTip').each(function(el) {
+				var title = el.get('title');
+				if (title) {
+					var parts = title.split('::', 2);
+					el.store('tip:title', parts[0]);
+					el.store('tip:text', parts[1]);
+				}
+			});
+			var JTooltips = new Tips($$('.hasTip'), { maxTitleChars: 50, fixed: false});
+		});
+  </script>
 
-  <!--SEO Meta Tags-->
-  <meta name="description" content="Unison Material Design Portfolio Template" />
-  <meta name="keywords" content="material design, portfolio, technology, business, corporate, hosting, web, startup, app showcase, mobile, blog, anding, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
-  <meta name="author" content="8Guild" />
-
-  <!--Mobile Specific Meta Tag-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-
-  <!--Favicon-->
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-  <!-- All Theme Styles including Bootstrap, FontAwesome, etc. compiled from styles.scss-->
-  <link href="css/styles.min.css" rel="stylesheet" media="screen">
-
-  <!-- Page Preloading -->
-  <script src="js/vendor/page-preloading.js"></script>
-
-  <!--Modernizr / Detectizr-->
-  <script src="js/vendor/modernizr.custom.js"></script>
-  <script src="js/vendor/detectizr.min.js"></script>
+<link rel="apple-touch-icon-precomposed" href="http://gamak.co/templates/yoo_subway/apple_touch_icon.png" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/base.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/layout.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/menus.css" />
+<style>body { min-width: 1180px; }
+.wrapper { width: 1030px; }
+#sidebar-a { width: 230px; }
+#maininner { width: 800px; }
+#menu .dropdown { width: 250px; }
+#menu .columns2 { width: 500px; }
+#menu .columns3 { width: 750px; }
+#menu .columns4 { width: 1000px; }</style>
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/modules.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/tools.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/system.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/extensions.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/custom.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/animations.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/background/grass.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/texture/tv.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/font2/newciclefina.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/font3/newciclefina.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/styles/green_yellow/css/style.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/css/print.css" />
+<link rel="stylesheet" href="http://gamak.co/templates/yoo_subway/fonts/newciclefina.css" />
+<script>window["WarpSystemPath"]="index.html";</script>
+<script>window["WarpThemePath"]="/templates/yoo_subway";</script>
+<script src="http://gamak.co/templates/yoo_subway/warp/js/warp.js"></script>
+<script src="http://gamak.co/templates/yoo_subway/warp/js/accordionmenu.js"></script>
+<script src="http://gamak.co/templates/yoo_subway/warp/js/dropdownmenu.js"></script>
+<script src="http://gamak.co/templates/yoo_subway/js/three.js"></script>
+<script src="http://gamak.co/templates/yoo_subway/js/template.js"></script>
 </head>
 
-<!-- Body -->
-<!-- Adding/Removing class ".parallax" is enabling/disabling background parallax effect on elements with background images and attributes data-stellar-background-ratio applied to them. Make sure you also added/removed link to stellar.js script before </body>. -->
-<!-- Adding/Removing class ".page-preloading" is enabling/disabling background smooth page transition effect and spinner. Make sure you also added/removed link to page-preloading.js script before </body> and ".page-preloader" right after <body> tag. -->
-<body class="parallax page-preloading">
+<body id="page" class="page sidebar-a-right  isblog  transparency-50 system-white" data-config='{"twitter":0,"plusone":0,"facebook":0}'>
 
-  <!-- Page Pre-Loader -->
-  <div class="page-preloader">
-    <div class="spinner-wrap">
-      <div class="mdl-spinner mdl-js-spinner is-active"></div>
-    </div>
-  </div>
+	<div id="page-body">
 
-  <!-- Page Wrapper -->
-  <div class="page-wrapper">
+		<div class="page-body-1">
 
-    <!-- Floating Header -->
-    <header class="floating-header">
+			
+						<div id="socialbar">
+				
+<ul class="social-icons">
+	<li><a class="twitter" target="_blank" href="http://www.twitter.com/gamak_co"></a></li>
+	<li><a class="facebook" target="_blank" href="http://www.facebook.com/gammaaccelerator"></a></li>
+	<li><a class="googleplus" target="_blank" href="https://plus.google.com/u/0/communities/110953960611200841132"></a></li>
+	<li><a class="feed" target="_blank" href="index.html#rss"></a></li>
+</ul>
+			</div>
+						
+			<div class="wrapper grid-block">
 
-      <!-- Site Logo -->
-      <a href="index.html" class="site-logo">
-        <img src="img/floating-logo.png" alt="Unison">
-      </a><!-- .floating-logo -->
+				<header id="header">
 
-      <!-- Floating Menu -->
-      <div class="floating-menu-btn">
-        <div class="floating-menu-toggle-wrap">
-          <div class="floating-menu-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div><!-- .floating-menu-toggle -->
-        </div><!-- .floating-menu-toggle-wrap -->
-      </div><!-- .floating-menu-btn -->
+					<div id="toolbar" class="grid-block">
 
-      <div class="main-navigation-wrap">
-        <nav class="main-navigation" data-back-btn-text="Back">
-          <ul class="menu">
-            <li class="menu-item-has-children current-menu-item">
-              <a href="#">Home</a>
-              <ul class="sub-menu">
-                <li class="current-menu-item"><a href="index.html">Home Design Agency</a></li>
-                <li><a href="home-architecture.html">Home Architecture</a></li>
-                <li><a href="home-photographer.html">Home Photographer</a></li>
-              </ul>
-            </li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-            <li><a href="elements.html">Elements</a></li>
-          </ul><!-- .menu -->
-        </nav><!-- .main-navigation -->
-      </div><!-- .main-navigation-wrap -->
-    </header><!-- .floating-header -->
+													
+												
+					</div>
 
-    <!-- Hero -->
-    <section class="fw-section bg-parallax" style="background-image: url(img/home/hero.jpg); padding-bottom: 170px;" data-stellar-background-ratio="0.65" data-stellar-vertical-offset="50">
-      <div class="container text-light">
-        <h1 class="text-huge">We're an independant design &amp; development agency.</h1>
-        <p class="text-lg"><span class="text-underline">84 people</span> <span class="opacity-80">in</span> <span class="text-underline">3 offices</span><span class="opacity-80">, creating beautiful software for 10 years.</span></p>
-        <div class="row padding-top-3x padding-bottom-2x">
-          <div class="col-lg-9 col-lg-offset-3 col-md-10 col-md-offset-2">
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="text-box">
-                  <h3 class="text-box-title">Brand &amp; Identity</h3>
-                  <p class="text-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sed aspernatur provident quaerat, libero suscipit.</p>
-                  <a href="#" class="btn btn-light-transparent btn-default btn-icon-right waves-effect">
-                    More
-                    <i class="material-icons trending_flat"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="text-box">
-                  <h3 class="text-box-title">Product Design</h3>
-                  <p class="text-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sed aspernatur provident quaerat, libero suscipit.</p>
-                  <a href="#" class="btn btn-light-transparent btn-default btn-icon-right waves-effect">
-                    More
-                    <i class="material-icons trending_flat"></i>
-                  </a>
-                </div>
-              </div>
-              <div class="col-sm-4">
-                <div class="text-box">
-                  <h3 class="text-box-title">Video Production</h3>
-                  <p class="text-box-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sed aspernatur provident quaerat, libero suscipit.</p>
-                  <a href="#" class="btn btn-light-transparent btn-default btn-icon-right waves-effect">
-                    More
-                    <i class="material-icons trending_flat"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- .fw-section -->
+					<div id="headerbar" class="grid-block">
+					
+							
+						<a id="logo" href="index.html">
+<style type="text/css">
+.gamak-logo { 
+  width:200px;
+  height:53px;
+  padding:10px;
+  background-image:url("http://gamak.co/images/yootheme/logo-normal.png"); 
+  background-size:200px 53px;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-color:transparent;
+}
+.gamak-logo:hover { 
+  background-image:url("http://gamak.co/images/yootheme/logo-hover.png");
+  background-color:#fff;
+}
+</style>
 
-    <!-- Featured Projects -->
-    <section class="container block-relative" style="margin-top: -170px; z-index: 1;">
-      <!-- block-title: Possible color classes ".block-title-default, .block-title-primary, .block-title-secondary, .block-title-success, .block-title-info, .block-title-warning, .block-title-danger, .block-title-light". -->
-      <h2 class="block-title block-title-light">
-        <i class="material-icons trending_flat"></i>
-        Featured Projects
-      </h2><!-- .block-title -->
-      <div class="row">
-        <div class="col-sm-4">
-          <a href="portfolio.html" class="portfolio-tile text-light" style="background-image: url(img/portfolio/01.jpg);">
-            <div class="project-info">
-              <h3 class="project-title">PS-HX500</h3>
-              <h4 class="project-meta">February 2016</h4>
-            </div>
-            <span class="portfolio-badge badge-floating">
-              <i class="material-icons visibility"></i>
-            </span>
-          </a><!-- .portfolio-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <a href="portfolio.html" class="portfolio-tile" style="background-image: url(img/portfolio/02.jpg);">
-            <div class="project-info">
-              <h3 class="project-title">Air Jordan</h3>
-              <h4 class="project-meta">September 2015</h4>
-            </div>
-            <span class="portfolio-badge badge-floating">
-              <i class="material-icons visibility"></i>
-            </span>
-          </a><!-- .portfolio-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <a href="portfolio.html" class="portfolio-tile text-light" style="background-image: url(img/portfolio/03.jpg);">
-            <div class="project-info">
-              <h3 class="project-title">Vacuum Cleaner</h3>
-              <h4 class="project-meta">July 2014</h4>
-            </div>
-            <span class="portfolio-badge">
-              <i class="material-icons play_arrow"></i>
-            </span>
-            <span class="portfolio-badge badge-floating">
-              <i class="material-icons visibility"></i>
-            </span>
-          </a><!-- .portfolio-tile -->
-        </div><!-- .col-sm-4 -->
-      </div><!-- .row -->
-      <!-- Add ".block-divider-light" class to alter light skin -->
-      <div class="block-divider"></div>
-    </section><!-- .container -->
+<div class="gamak-logo">&nbsp;</div>
+</a>
+												
+												
+					</div>
 
-    <!-- Services -->
-    <section class="container padding-top-3x padding-bottom">
-      <!-- block-title: Possible color classes ".block-title-default, .block-title-primary, .block-title-secondary, .block-title-success, .block-title-info, .block-title-warning, .block-title-danger, .block-title-light". -->
-      <h2 class="block-title block-title-secondary space-top">
-        <i class="material-icons trending_flat"></i>
-        We are a design partner
-      </h2><!-- .block-title -->
-      <div class="row mobile-center">
-        <div class="col-lg-5 col-md-6 scrollReveal sr-left">
-          <!-- Nav Tabs -->
-          <ul class="nav-tabs" role="tablist">
-            <li class="active"><a href="#collaboration" role="tab" data-toggle="tab">Collaboration</a></li>
-            <li><a href="#exploration" role="tab" data-toggle="tab">Exploration</a></li>
-            <li><a href="#proactivity" role="tab" data-toggle="tab">Proactivity</a></li>
-          </ul><!-- .nav-tabs -->
-          <div class="tab-content">
-            <div role="tabpanel" class="tab-pane transition fade scale in active" id="collaboration">
-              <p>The world has become so fast paced that people don’t want to stand by reading a page of information.</p>
-              <p class="text-gray">Many conventional colleges and universities are now offering online DVD repair courses, which are the exact same as those taught on a traditional college campus, to distance learners. Online education is generally taught through the use of several different methods, including online satellite feeds.</p>
-            </div>
-            <div role="tabpanel" class="tab-pane transition fade scale" id="exploration">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero mollitia.</p>
-              <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestiae, similique excepturi ex iste aut necessitatibus suscipit, eius, commodi dolor quas quisquam labore, laborum cum vitae enim eligendi distinctio quia. Minus porro est sunt rem quas, modi, eaque! Officiis blanditiis, eos delectus optio.</p>
-            </div>
-            <div role="tabpanel" class="tab-pane transition fade scale" id="proactivity">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic libero mollitia.</p>
-              <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus molestiae, similique excepturi ex iste aut necessitatibus suscipit, eius, commodi dolor quas quisquam labore, laborum cum vitae enim eligendi distinctio quia. Minus porro est sunt rem quas, modi, eaque! Officiis blanditiis, eos delectus optio.</p>
-            </div>
-          </div><!-- .tab-content -->
-          <a href="#" class="btn btn-ghost btn-primary waves-effect waves-light space-top-none">We believe in</a>
-        </div><!-- .col-lg-5.col-md-6 -->
-        <div class="col-lg-6 col-lg-offset-1 col-md-6 padding-top-2x">
-          <div class="row">
-            <div class="col-sm-4 scrollReveal sr-scaleUp sr-ease-in-out-back">
-              <div class="box-with-icon text-center">
-                <i class="flaticon-open-book-with-bookmark"></i>
-                <h3 class="bwi-title">Branding</h3>
-                <p>Lorem ipsum dolor sit amet elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-4 scrollReveal sr-scaleUp sr-delay-1 sr-ease-in-out-back">
-              <div class="box-with-icon text-center">
-                <i class="flaticon-editor-pencil"></i>
-                <h3 class="bwi-title">Design</h3>
-                <p>Lorem ipsum dolor sit amet elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-4 scrollReveal sr-scaleUp sr-delay-2 sr-ease-in-out-back">
-              <div class="box-with-icon text-center">
-                <i class="flaticon-inclined-rocket"></i>
-                <h3 class="bwi-title">Motion</h3>
-                <p>Lorem ipsum dolor sit amet elit.</p>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 scrollReveal sr-scaleUp sr-delay-3 sr-ease-in-out-back">
-              <div class="box-with-icon text-center">
-                <i class="flaticon-line-stats"></i>
-                <h3 class="bwi-title">Advertising</h3>
-                <p>Lorem ipsum dolor sit amet elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-4 scrollReveal sr-scaleUp sr-delay-4 sr-ease-in-out-back">
-              <div class="box-with-icon text-center">
-                <i class="flaticon-big-towers"></i>
-                <h3 class="bwi-title">Strategy</h3>
-                <p>Lorem ipsum dolor sit amet elit.</p>
-              </div>
-            </div>
-            <div class="col-sm-4 scrollReveal sr-scaleUp sr-delay-5 sr-ease-in-out-back">
-              <div class="box-with-icon text-center">
-                <i class="flaticon-public-speech"></i>
-                <h3 class="bwi-title">Consultancy</h3>
-                <p>Lorem ipsum dolor sit amet elit.</p>
-              </div>
-            </div>
-          </div>
-        </div><!-- .col-lg-6.col-lg-offset-1.col-md-6 -->
-      </div><!-- .row -->
-    </section><!-- .container -->
+					<div id="menubar" class="grid-block">
+						
+												<nav id="menu"><ul class="menu menu-dropdown"><li class="level1 item101 parent active current"><a href="index.html" class="level1 parent active current"><span><span class="icon" style="background-image: url('http://gamak.co/images/yootheme/menu/icon_menu_home.png');"> </span>community</span></a><div class="dropdown columns2" style="width:400px;"><div class="dropdown-bg"><div><div class="width50 column"><ul class="level2"><li class="level2 item131"><a href="community/mentors.html" class="level2"><span>Mentors</span></a></li><li class="level2 item132"><a href="community/startups.html" class="level2"><span>Startups</span></a></li><li class="level2 item133"><a href="community/team.html" class="level2"><span>Team</span></a></li></ul></div><div class="width50 column"><ul class="level2"><li class="level2 item134"><a href="community/partners.html" class="level2"><span>Partners</span></a></li><li class="level2 item135"><a href="community/join.html" class="level2"><span>Join</span></a></li></ul></div></div></div></div></li><li class="level1 item102 parent"><a href="programs.html" class="level1 parent"><span><span class="icon" style="background-image: url('http://gamak.co/images/yootheme/menu/icon_menu_features.png');"> </span>programs</span></a><div class="dropdown columns2" style="width:400px;"><div class="dropdown-bg"><div><div class="width50 column"><ul class="level2"><li class="level2 item103"><a href="programs/accelerator.html" class="level2"><span>Accelerator</span></a></li><li class="level2 item164"><a href="programs/gamak-test-drive.html" class="level2"><span>Gamak Test Drive</span></a></li><li class="level2 item104"><a href="programs/calculate-it.html" class="level2"><span>Calculate IT</span></a></li></ul></div><div class="width50 column"><ul class="level2"><li class="level2 item165"><a href="programs/deep-dive.html" class="level2"><span>Deep Dive</span></a></li><li class="level2 item166"><a href="programs/social-lab.html" class="level2"><span>Social Lab</span></a></li></ul></div></div></div></div></li><li class="level1 item137 parent"><a href="services.html" class="level1 parent"><span><span class="icon" style="background-image: url('http://gamak.co/images/yootheme/menu/icon_menu_widgetkit.png');"> </span>services</span></a><div class="dropdown columns2" style="width:400px;"><div class="dropdown-bg"><div><div class="width50 column"><ul class="level2"><li class="level2 item138"><a href="services/for-residents.html" class="level2"><span>for residents</span></a></li></ul></div><div class="width50 column"><ul class="level2"><li class="level2 item147"><a href="services/for-others.html" class="level2"><span>for others</span></a></li></ul></div></div></div></div></li><li class="level1 item105"><a href="coworking.html" class="level1"><span><span class="icon" style="background-image: url('http://gamak.co/images/yootheme/menu/icon_menu_icons.png');"> </span>coworking</span></a></li><li class="level1 item106 parent"><a href="events.html" class="level1 parent"><span><span class="icon" style="background-image: url('http://gamak.co/images/yootheme/menu/icon_menu_zoo.png');"> </span>events</span></a><div class="dropdown columns2" style="width:400px;"><div class="dropdown-bg"><div><div class="width50 column"><ul class="level2"><li class="level2 item149"><a href="events/past.html" class="level2"><span>past</span></a></li><li class="level2 item216"><a href="events.html" class="level2"><span>soon</span></a></li></ul></div><div class="width50 column"><ul class="level2"><li class="level2 item168"><a href="events/video.html" class="level2"><span>video</span></a></li></ul></div></div></div></div></li></ul></nav>
+						
+												<div id="search">
+<form id="searchbox" action="http://gamak.co/" method="post" role="search">
+	<input type="text" value="" name="searchword" placeholder="search..." />
+	<button type="reset" value="Reset"></button>
+	<input type="hidden" name="task"   value="search" />
+	<input type="hidden" name="option" value="com_search" />
+	<input type="hidden" name="Itemid" value="101" />	
+</form>
 
-    <!-- VR Experience -->
-    <section class="fw-section bg-no-cover space-top-3x padding-top-3x padding-bottom-3x" style="background-color: #f6f6f6; background-image: url(img/home/vr.jpg);">
-      <div class="container padding-top-3x padding-bottom-3x">
-        <!-- block-title: Possible color classes ".block-title-default, .block-title-primary, .block-title-secondary, .block-title-success, .block-title-info, .block-title-warning, .block-title-danger, .block-title-light". -->
-        <h2 class="block-title block-title-secondary">
-          <i class="material-icons trending_flat"></i>
-          We made a VR out of office litter
-        </h2><!-- .block-title -->
-        <div class="row">
-          <div class="col-lg-4 col-md-5 col-sm-6">
-            <h3 class="h1 text-thin">Great VR Experience</h3>
-            <p class="text-gray">You should be able to find several indispensable facts about motivation in the following paragraphs. If there’s at least one fact you didn’t know before, imagine the difference it might make. It’s so difficult to go on when everything seems to fail, isn’t it?</p>
-            <a href="#" class="btn btn-primary waves-effect waves-light">Explore case</a>
-          </div>
-        </div><!-- .row -->
-      </div><!-- .container -->
-    </section><!-- .fw-section -->
+<script src="http://gamak.co/templates/yoo_subway/warp/js/search.js"></script>
+<script>
+jQuery(function($) {
+	$('#searchbox input[name=searchword]').search({'url': '/component/search/?tmpl=raw&amp;type=json&amp;ordering=&amp;searchphrase=all', 'param': 'searchword', 'msgResultsHeader': 'Search Results', 'msgMoreResults': 'More Results', 'msgNoResults': 'No results found'}).placeholder();
+});
+</script></div>
+												
+					</div>
+				
+									
+				</header>
 
-    <!-- Clients / Testimonials -->
-    <section class="container padding-top-3x padding-bottom-3x">
-      <!-- block-title: Possible color classes ".block-title-default, .block-title-primary, .block-title-secondary, .block-title-success, .block-title-info, .block-title-warning, .block-title-danger, .block-title-light". -->
-      <h2 class="block-title space-top block-title-secondary">
-        <i class="material-icons trending_flat"></i>
-        They trust us, and vice versa
-      </h2><!-- .block-title -->
-      <div class="row mobile-center">
-        <div class="col-sm-4 scrollReveal sr-bottom">
-          <div class="client">
-            <img src="img/clients/01.svg" alt="Client">
-            <p class="text"><i class="material-icons trending_flat"></i><span>Lorem ipsum dolor sit amet, consecteturxcc adipisicing elit omnis perspiciatis.</span></p>
-          </div><!-- .client -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4 scrollReveal sr-bottom sr-delay-1">
-          <div class="client">
-            <img src="img/clients/02.svg" alt="Client">
-            <p class="text"><i class="material-icons trending_flat"></i><span>Lorem ipsum dolor sit amet, consecteturxcc adipisicing elit omnis.</span></p>
-          </div><!-- .client -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4 scrollReveal sr-bottom sr-delay-2">
-          <div class="client">
-            <img src="img/clients/03.svg" alt="Client">
-            <p class="text"><i class="material-icons trending_flat"></i><span>Lorem ipsum dolor sit amet, consecteturxcc adipisicing elit omnis perspiciatis.</span></p>
-          </div><!-- .client -->
-        </div><!-- .col-sm-4 -->
-      </div><!-- .row -->
-      <div class="row mobile-center">
-        <div class="col-sm-4 scrollReveal sr-bottom sr-delay-3">
-          <div class="client">
-            <img src="img/clients/04.svg" alt="Client">
-            <p class="text"><i class="material-icons trending_flat"></i><span>Lorem ipsum dolor sit amet, consecteturxcc adipisicing elit omnis.</span></p>
-          </div><!-- .client -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4 scrollReveal sr-bottom sr-delay-4">
-          <div class="client">
-            <img src="img/clients/05.svg" alt="Client">
-            <p class="text"><i class="material-icons trending_flat"></i><span>Lorem ipsum dolor sit amet, consecteturxcc adipisicing elit omnis perspiciatis.</span></p>
-          </div><!-- .client -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4 scrollReveal sr-bottom sr-delay-5">
-          <div class="client">
-            <img src="img/clients/06.svg" alt="Client">
-            <p class="text"><i class="material-icons trending_flat"></i><span>Lorem ipsum dolor sit amet, consecteturxcc adipisicing elit omnis.</span></p>
-          </div><!-- .client -->
-        </div><!-- .col-sm-4 -->
-      </div><!-- .row -->
+								
+								
+								<div id="main" class="grid-block">
+				
+					<div id="maininner" class="grid-box">
+					
+						
+												<section id="breadcrumbs"><div class="breadcrumbs"><strong>Home</strong></div></section>
+						
+												<section id="content" class="grid-block">
+<div id="system-message-container">
+</div>
 
-      <!-- Testimonials carousel -->
-      <!-- Data API:
-        data-loop="true/false" enable/disable looping
-        data-autoplay="true/false" enable/disable carousel autoplay
-        data-interval="3000" autoplay interval timeout in miliseconds
-        Simply add necessary data attribute to the ".testimonials-carousel" with appropriate value to adjust carousel functionality.
-       -->
-      <div class="testimonials-carousel space-top space-bottom">
-        <div class="author-img">
-          <span class="active" id="auth01" style="background-image: url(img/testimonials/01.jpg);"></span>
-          <span id="auth02" style="background-image: url(img/testimonials/02.jpg);"></span>
-          <span id="auth03" style="background-image: url(img/testimonials/03.jpg);"></span>
-          <span id="auth04" style="background-image: url(img/testimonials/04.jpg);"></span>
-          <span id="auth05" style="background-image: url(img/testimonials/05.jpg);"></span>
-        </div>
-        <div class="testimonial">
-          <div class="inner">
-            <blockquote data-author-id="auth01">
-              <p>By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover and create.</p>
-              <cite>Rachel Robinson<span>CEO 8Guild Inc.</span></cite>
-            </blockquote>
-            <blockquote data-author-id="auth02">
-              <p>By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover and create.</p>
-              <cite>Nina Tyler<span>HR Manager 8Guild Inc.</span></cite>
-            </blockquote>
-            <blockquote data-author-id="auth03">
-              <p>By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover and create.</p>
-              <cite>Seth Holloway<span>CTO 8Guild Inc.</span></cite>
-            </blockquote>
-            <blockquote data-author-id="auth04">
-              <p>By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover and create.</p>
-              <cite>Aiden Morgan<span>Senior PHP 8Guild Inc.</span></cite>
-            </blockquote>
-            <blockquote data-author-id="auth05">
-              <p>By automating routine checks and corrections, our tools speed up production, freeing developers to grow, discover and create.</p>
-              <cite>Ophelia Maldonado<span>Lead Designer 8Guild Inc.</span></cite>
-            </blockquote>
-          </div>
-        </div>
-      </div><!-- .testimonials-carousel -->
-    </section><!-- .container -->
+<div id="system">
 
-    <!-- Contact Form -->
-    <section class="fw-section bg-no-cover padding-top-3x padding-bottom-3x" style="background-color: #5e72ec; background-image: url(img/home/contact-form-bg.jpg);">
-      <div class="container">
-        <!-- block-title: Possible color classes ".block-title-default, .block-title-primary, .block-title-secondary, .block-title-success, .block-title-info, .block-title-warning, .block-title-danger, .block-title-light". -->
-        <h2 class="block-title space-top block-title-light">
-          <i class="material-icons trending_flat"></i>
-          We'd love to hear about your project!
-        </h2><!-- .block-title -->
-        <!-- Contact form -->
-        <form method="post" class="ajax-form space-bottom" autocomplete="off">
-          <div class="row">
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-input form-input-light">
-                    <input type="text" name="name" id="cf_name">
-                    <label for="cf_name">Name</label>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-input form-input-light">
-                    <input type="email" name="email" id="cf_email">
-                    <label for="cf_email">Email</label>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-9 col-sm-8">
-                  <div class="form-input form-textarea form-input-light">
-                    <textarea name="message" id="cf_message" rows="2"></textarea>
-                    <label for="cf_message">Message</label>
-                  </div>
-                  <div class="response-holder"></div>
-                </div>
-                <div class="col-md-3 col-sm-4">
-                  <button type="submit" class="btn btn-primary btn-icon-right btn-block waves-effect waves-light">
-                    Send
-                    <i class="material-icons send"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div><!-- .row -->
-        </form><!-- .ajax-form -->
-      </div><!-- .container -->
-    </section><!-- .fw-section -->
+	
+	
+	
+	
+	<div class="items items-col-2 grid-block"><div class="grid-box width100 leading">
+<article class="item" data-permalink="http://gamak.co/community/join.html">
 
-    <!-- Team -->
-    <section class="container padding-top-3x padding-bottom-3x">
-      <!-- block-title: Possible color classes ".block-title-default, .block-title-primary, .block-title-secondary, .block-title-success, .block-title-info, .block-title-warning, .block-title-danger, .block-title-light". -->
-      <h2 class="block-title block-title-secondary">
-        <i class="material-icons trending_flat"></i>
-        Selfies. Our People
-      </h2><!-- .block-title -->
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-tile">
-            <div class="info">
-              <h3>Aiden Morgan</h3>
-              <h4>CEO 8Guild</h4>
-            </div>
-            <img src="img/team/01.jpg" alt="Team">
-            <div class="social-bar-circle text-right">
-              <a href="#" class="sb-skype waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Skype">
-                <i class="fa fa-skype"></i>
-              </a>
-              <a href="#" class="sb-facebook waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-              <a href="#" class="sb-google-plus waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Google+">
-                <i class="fa fa-google-plus"></i>
-              </a>
-            </div>
-          </div><!-- .team-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="team-tile">
-            <div class="info">
-              <h3>Tom Smith</h3>
-              <h4>Lead Designer</h4>
-            </div>
-            <img src="img/team/02.jpg" alt="Team">
-            <div class="social-bar-circle text-right">
-              <a href="#" class="sb-link waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Link">
-                <i class="fa fa-link"></i>
-              </a>
-              <a href="#" class="sb-twitter waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Twitter">
-                <i class="fa fa-twitter"></i>
-              </a>
-              <a href="#" class="sb-behance waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Behance">
-                <i class="fa fa-behance"></i>
-              </a>
-            </div>
-          </div><!-- .team-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="team-tile">
-            <div class="info">
-              <h3>Helen Shelton</h3>
-              <h4>Senior PHP Dev</h4>
-            </div>
-            <img src="img/team/03.jpg" alt="Team">
-            <div class="social-bar-circle text-right">
-              <a href="#" class="sb-skype waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Skype">
-                <i class="fa fa-skype"></i>
-              </a>
-              <a href="#" class="sb-linkedin waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="LinkedIn">
-                <i class="fa fa-linkedin"></i>
-              </a>
-              <a href="#" class="sb-stackoverflow waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Stack Overflow">
-                <i class="fa fa-stack-overflow"></i>
-              </a>
-            </div>
-          </div><!-- .team-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="team-tile">
-            <div class="info">
-              <h3>Seth Holloway</h3>
-              <h4>CTO 8Guild</h4>
-            </div>
-            <img src="img/team/04.jpg" alt="Team">
-            <div class="social-bar-circle text-right">
-              <a href="#" class="sb-link waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Link">
-                <i class="fa fa-link"></i>
-              </a>
-              <a href="#" class="sb-twitter waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Twitter">
-                <i class="fa fa-twitter"></i>
-              </a>
-              <a href="#" class="sb-facebook waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Facebook">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </div>
-          </div><!-- .team-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="team-tile">
-            <div class="info">
-              <h3>Nina Tyler</h3>
-              <h4>HR Manager</h4>
-            </div>
-            <img src="img/team/05.jpg" alt="Team">
-            <div class="social-bar-circle text-right">
-              <a href="#" class="sb-linkedin waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="LinkedIn">
-                <i class="fa fa-linkedin"></i>
-              </a>
-              <a href="#" class="sb-google-plus waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Google+">
-                <i class="fa fa-google-plus"></i>
-              </a>
-              <a href="#" class="sb-twitter waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Twitter">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </div>
-          </div><!-- .team-tile -->
-        </div><!-- .col-sm-4 -->
-        <div class="col-sm-4">
-          <div class="team-tile">
-            <div class="info">
-              <h3>Ophelia Maldonado</h3>
-              <h4>Java Developers</h4>
-            </div>
-            <img src="img/team/06.jpg" alt="Team">
-            <div class="social-bar-circle text-right">
-              <a href="#" class="sb-stackoverflow waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Stack Overflow">
-                <i class="fa fa-stack-overflow"></i>
-              </a>
-              <a href="#" class="sb-steam waves-effect waves-light waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Steam">
-                <i class="fa fa-steam"></i>
-              </a>
-              <a href="#" class="sb-skype waves-effect waves-light" data-toggle="tooltip" data-placement="top" title="Skype">
-                <i class="fa fa-skype"></i>
-              </a>
-            </div>
-          </div><!-- .team-tile -->
-        </div><!-- .col-sm-4 -->
-      </div><!-- .row -->
-    </section><!-- .container -->
+		<header>
 
-    <!-- Scroll To Top Button -->
-    <a href="#" class="scroll-to-top-btn">
-      <i class="material-icons keyboard_arrow_up"></i>
-    </a><!-- .scroll-to-top-btn -->
+			
+		
+				<time datetime="2012-08-17" pubdate>
+			<!-- <span class="day">17</span>
+			<span class="month">Aug</span>
+			<span class="year">2012</span> -->
+		</time>
+			
+		<h1 class="title">
+							<a href="community/join.html" title="Application Process">Application Process</a>
+					</h1>
+	
+		
+	</header>
+	
+	
+	<div class="content clearfix">
+		<p>We are currently accepting applications for our acceleration programs.</p>
+<p>Note: We have a limited number of places and will be accepting only best teams, which share our Values and can Add Value to our community. The application process involves the analysis of the candidate’s plans, interviewing the management team, seeking advice from advisors, reviewing financials and checking references.</p>
+	</div>
 
-    <!-- Footer -->
-    <footer class="footer footer-alt">
+	
+		
+</article>
 
-      <!-- Main footer -->
-      <div class="footer-main fw-table">
-        <div class="inner">
-          <div class="column">
-            <div class="widget widget_copyright">
-              <a href="index.html" class="footer-logo" style="max-width: 79px;">
-                <img src="img/footer-logo.png" alt="Unison">
-              </a>
-              <p class="copyright-text">Unison. 2016.<br> Made by 8Guild with <i class="fa fa-heart"></i></p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="widget widget_menu">
-              <ul>
-                <li class="current-menu-item"><a href="index.html">Home</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contacts.html">Contacts</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="column">
-            <div class="widget widget_socials">
-              <div class="social-bar">
-                <a href="#" class="sb-steam" data-toggle="tooltip" data-placement="top" title="Steam">
-                  <i class="fa fa-steam"></i>
-                </a>
-                <a href="#" class="sb-vimeo" data-toggle="tooltip" data-placement="top" title="Vimeo">
-                  <i class="fa fa-vimeo"></i>
-                </a>
-                <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter">
-                  <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- .footer-main -->
-    </footer><!-- .footer -->
+<div class="links">
 
-  </div><!-- .page-wrapper -->
+	
+	<a href="community/join.html" title="Application Process">
+		Continue Reading	</a>
+	
+</div>
+</div><div class="grid-box width50">
+<article class="item" data-permalink="http://gamak.co/community/partners.html">
 
-  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
-  <script src="js/vendor/jquery-2.1.4.min.js"></script>
-  <script src="js/vendor/jquery.easing.min.js"></script>
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="js/vendor/waves.min.js"></script>
-  <script src="js/vendor/smoothscroll.js"></script>
-  <script src="js/vendor/jquery.stellar.min.js"></script>
-  <script src="js/vendor/waypoints.min.js"></script>
-  <script src="js/vendor/velocity.min.js"></script>
-  <script src="js/vendor/owl.carousel.min.js"></script>
-  <script src="js/vendor/scrollreveal.min.js"></script>
-  <script src="mailer/mailer.js"></script>
-  <script src="js/scripts.js"></script>
+		<header>
 
-</body><!-- <body> -->
+			
+		
+				<time datetime="2012-08-17" pubdate>
+			<!-- <span class="day">17</span>
+			<span class="month">Aug</span>
+			<span class="year">2012</span> -->
+		</time>
+			
+		<h1 class="title">
+							<a href="community/partners.html" title="Partners">Partners</a>
+					</h1>
+	
+		
+	</header>
+	
+	
+	<div class="content clearfix">
+		<p>Our startups benefit from the rich Gamak ecosystem, which is backed by the by a group of top institutional and independent investors, which include:</p>
+	</div>
+
+	
+		
+</article>
+
+<div class="links">
+
+	
+	<a href="community/partners.html" title="Partners">
+		Continue Reading	</a>
+	
+</div>
+
+<article class="item" data-permalink="http://gamak.co/community/team.html">
+
+		<header>
+
+			
+		
+				<time datetime="2012-08-17" pubdate>
+			<!-- <span class="day">17</span>
+			<span class="month">Aug</span>
+			<span class="year">2012</span> -->
+		</time>
+			
+		<h1 class="title">
+							<a href="community/team.html" title="Team">Team</a>
+					</h1>
+	
+		
+	</header>
+	
+	
+	<div class="content clearfix">
+		<p>We’re the pioneers of Belarus tech entrepreneurship, team that lunched first Belarusian IT Incubator and most successful project of 2011 G-Incubator. Now we come close to our dream to make the community of like-minded people who are comfortable with work and play. Each of us has recently or is currently running a technology company. We understand the most common challenges that all entrepreneurs face and can give necessary assistance and useful advice.</p>
+	</div>
+
+	
+		
+</article>
+
+<div class="links">
+
+	
+	<a href="community/team.html" title="Team">
+		Continue Reading	</a>
+	
+</div>
+</div><div class="grid-box width50">
+<article class="item" data-permalink="http://gamak.co/community/startups.html">
+
+		<header>
+
+			
+		
+				<time datetime="2012-08-17" pubdate>
+			<!-- <span class="day">17</span>
+			<span class="month">Aug</span>
+			<span class="year">2012</span> -->
+		</time>
+			
+		<h1 class="title">
+							<a href="community/startups.html" title="Startups">Startups</a>
+					</h1>
+	
+		
+	</header>
+	
+	
+	<div class="content clearfix">
+		<p>What makes Gamak special is the community. Our residents watch out for one another, respect one another, grab lunch together, get drinks at happy hour, and take care of their space. To stay true to this, we have to make sure that everyone that’s interested in Gamak realizes that it’s not just a work space. Because being a Gamak resident is so much more. The community we serve – a collection of entrepreneurs, activists, designers and architects – is at the heart of everything we do.</p>
+	</div>
+
+	
+		
+</article>
+
+<div class="links">
+
+	
+	<a href="community/startups.html" title="Startups">
+		Continue Reading	</a>
+	
+</div>
+
+<article class="item" data-permalink="http://gamak.co/community/mentors.html">
+
+		<header>
+
+			
+		
+				<time datetime="2012-08-17" pubdate>
+			<!-- <span class="day">17</span>
+			<span class="month">Aug</span>
+			<span class="year">2012</span> -->
+		</time>
+			
+		<h1 class="title">
+							<a href="community/mentors.html" title="Mentors">Mentors</a>
+					</h1>
+	
+		
+	</header>
+	
+	
+	<div class="content clearfix">
+		<p>GamAK has assembled more than 100 world-class advisers to help build your business. Our mentor network includes Executives-in-Residence with their own records of success, industry leaders, technology experts, established entrepreneurs, service providers and investors ready to share real-world business experience.</p>
+
+	</div>
+
+	
+		
+</article>
+
+<div class="links">
+
+	
+	<a href="community/mentors.html" title="Mentors">
+		Continue Reading	</a>
+	
+</div>
+</div></div>
+	
+	
+</div></section>
+						
+						
+					</div>
+					<!-- maininner end -->
+					
+										<aside id="sidebar-a" class="grid-box"><div class="grid-box width100 grid-v"><div class="module mod-box mod-box-color2  deepest">
+
+			
+<a href="apply.html">
+<img class="size-auto align-center" src="http://gamak.co/images/yootheme/icon_contact.png" height="126" width="126" alt="Contact Icon" />
+<h3 class="module-title">apply</h3>
+</a>
+		
+</div></div><div class="grid-box width100 grid-v"><div class="module mod-box mod-box-color3  deepest">
+
+			
+<a href="http://eepurl.com/tXdo9">
+<img style="width:190px;" src="http://gamak.co/images/events/qr-subscribe.png" />
+<p style="margin-top:0px; align:center; font-size:20px; font-family:'NewCicleFina';">subscribe to mailing list</p>
+</a>
+		
+</div></div><div class="grid-box width100 grid-v"><div class="module mod-box mod-box-color1  deepest">
+
+			<article class="wk-twitter wk-twitter-single ">
+
+	<p class="content">4 Reasons Google Bought Waze <a href="http://t.co/q2hLLyBjX6">http://t.co/q2hLLyBjX6</a></p>
+
+	
+</article>		
+</div></div><div class="grid-box width100 grid-v"><div class="module mod-box mod-box-color4  deepest">
+
+			
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.html#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like-box" data-href="http://www.facebook.com/gammaaccelerator" data-width="190" data-height="300" data-border-color="#fff" data-show-faces="true" data-stream="false" data-header="false"></div>
+		
+</div></div></aside>
+										
+					
+				</div>
+								<!-- main end -->
+
+								
+								
+								<footer id="footer" class="grid-block">
+
+										<a id="totop-scroller" href="#page"></a>
+					
+					<div class="module   deepest">
+
+			
+<p>Built with HTML5 and CSS3 | Copyright © 2012 <a href="component/users/index015e.html?view=login">Gamak Co</a></p>
+<p>
+ <script type='text/javascript'>
+ <!--
+ var prefix = '&#109;a' + 'i&#108;' + '&#116;o';
+ var path = 'hr' + 'ef' + '=';
+ var addy5671 = '&#105;nf&#111;' + '&#64;';
+ addy5671 = addy5671 + 'g&#97;m&#97;k' + '&#46;' + 'c&#111;';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy5671 + '\'>');
+ document.write(addy5671);
+ document.write('<\/a>');
+ //-->\n </script><script type='text/javascript'>
+ <!--
+ document.write('<span style=\'display: none;\'>');
+ //-->
+ </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
+ <script type='text/javascript'>
+ <!--
+ document.write('</');
+ document.write('span>');
+ //-->
+ </script></p>
+		
+</div>
+				</footer>
+				
+			</div>
+			
+			
+		</div>
+
+	</div>
+	
+</body>
 
 </html>
