@@ -1,1 +1,1 @@
-# gamak.co
+# gamak
