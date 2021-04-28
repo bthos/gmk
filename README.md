@@ -1,1 +1,1 @@
-# gamak
+gmk
